@@ -7,7 +7,7 @@
       i18n:domain="plone">
 <body>
 
-<article metal:fill-slot="main" itemscope itemtype="http://schema.org/Event">
+<article metal:fill-slot="main" itemscope="itemscope" itemtype="http://schema.org/Event">
     <metal:content-core define-macro="main"
                         tal:define="kssClassesView context/@@kss_field_decorator_view;
                                     getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
