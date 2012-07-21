@@ -1,0 +1,4 @@
+<layers>
+    <layer name="collective.microdata.event"
+           interface="collective.microdata.event.interfaces.IMicrodataEventLayer" />
+</layers>

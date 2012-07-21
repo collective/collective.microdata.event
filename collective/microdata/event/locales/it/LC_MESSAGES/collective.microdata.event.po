@@ -1,0 +1,28 @@
+# Italian translation for collective.microdata.event
+# Luca Fabbri <luca@keul.it>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-07-15 18:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: keul <luca@keul.it>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: it\n"
+"Language-Name: Italian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.microdata.event\n"
+
+#. Default: "${microdata_start} ${startdate} to ${linebreak} ${microdata_end} ${enddate}"
+#: ../browser/event_view.pt:60
+msgid "event_when_differentday"
+msgstr "dal ${microdata_start} ${startdate} ${linebreak} al ${microdata_end} ${enddate}"
+
+#. Default: "${date} ${linebreak} from ${microdata_start} ${starttime} to ${microdata_end} ${endtime}"
+#: ../browser/event_view.pt:98
+msgid "event_when_sameday"
+msgstr "${date} ${linebreak} ${microdata_start} dalle ${starttime} alle ${microdata_end} ${endtime}"
+

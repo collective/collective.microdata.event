@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="plone">
+    
+  <include package="plone.app.contentmenu" />
+
+  <browser:page
+      for="Products.ATContentTypes.interfaces.IATEvent"
+      name="event_view"
+      layer="..interfaces.IMicrodataEventLayer"
+      template="event_view.pt"
+      permission="zope2.View"
+      />
+  <browser:menuItem
+      for="Products.ATContentTypes.interfaces.IATEvent"
+      menu="plone_displayviews"
+      title="View Event"
+      action="@@event_view"
+      description=""
+      />
+
+</configure>

@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.microdata.event">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  <i18n:registerTranslations directory="locales" />
+
+  <include package=".browser" />
+
+<genericsetup:registerProfile
+      name="default"
+      title="collective.microdata.event"
+      directory="profiles/default"
+      description="Add microdata support to Plone events"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
