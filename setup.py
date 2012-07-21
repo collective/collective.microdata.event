@@ -12,7 +12,9 @@ setup(name='collective.microdata.event',
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
         "Framework :: Plone",
+        "Framework :: Plone :: 4.2",
         "Programming Language :: Python",
+        "Environment :: Web Environment",
         ],
       keywords='plone microdata schema.org html5 event',
       author='keul',
