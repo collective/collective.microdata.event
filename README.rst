@@ -1,11 +1,13 @@
 Introduction
 ============
 
-Installing this package will override default event view of your Plone site. Changes are minimal, just to
+Install this package and get an alternative version of event view in your Plone site. Changes are minimal, just to
 add basic HTML 5 `microdata`__ information, taken from `schema.org`__ specification.
 
 __ http://en.wikipedia.org/wiki/Microdata_%28HTML%29
 __ http://www.schema.org/Event
+
+Microdata available in Web pages can be used from search engines, enhancing the quality of information indexed.
 
 Details
 =======
