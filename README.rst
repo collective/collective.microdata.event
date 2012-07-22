@@ -33,3 +33,7 @@ Follow a list supported properties:
 
 __ http://www.schema.org/Person
 
+Notes
+-----
+
+Providing microdata doesn't ensure that search engines will use them.
