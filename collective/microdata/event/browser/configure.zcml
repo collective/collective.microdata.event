@@ -10,6 +10,7 @@
       for="Products.ATContentTypes.interfaces.IATEvent"
       name="event_view"
       layer="..interfaces.IMicrodataEventLayer"
+      class=".view.EventView"
       template="event_view.pt"
       permission="zope2.View"
       />

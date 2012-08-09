@@ -11,6 +11,12 @@
   <include package="collective.microdata.core" />
   <include package=".browser" />
 
+  <adapter name="microdata_itemtype" factory=".indexer.microdata_itemtype" />
+
+  <adapter for="Products.ATContentTypes.interfaces.IATEvent"
+           provides="collective.microdata.core.interfaces.ISchemaOrgThing"
+           factory=".adapter.EventMicrodataProvider" />
+
   <genericsetup:registerProfile
       name="default"
       title="collective.microdata.event"

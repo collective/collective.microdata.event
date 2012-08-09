@@ -7,7 +7,10 @@
       i18n:domain="plone">
 <body>
 
-<article metal:fill-slot="main" itemscope="itemscope" itemtype="http://schema.org/Event">
+<article metal:fill-slot="main"
+         tal:define="microdata view/microdata"
+         itemscope="itemscope" itemtype="http://schema.org/Event"
+         tal:attributes="itemtype microdata/microdata_vocabulary">
     <metal:content-core define-macro="main"
                         tal:define="kssClassesView context/@@kss_field_decorator_view;
                                     getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
@@ -40,7 +43,7 @@
                             <tal:differentday tal:condition="python:not context.start().Date() == context.end().Date()"
                                               i18n:translate="event_when_differentday"
                                               i18n:domain="collective.microdata.event">
-                                <meta i18n:name="microdata_start" itemprop="startDate" tal:attributes="content python:context.start().ISO8601()" />
+                                <meta i18n:name="microdata_start" itemprop="startDate" tal:attributes="content microdata/startDate" />
                                 <abbr i18n:name="startdate"
                                       metal:define-macro="startdate-field-view"
                                       tal:define="kss_class python:getKssClasses('startDate',
@@ -56,7 +59,7 @@
                                 </abbr>
                                 to
                                 <br i18n:name="linebreak" />
-                                <meta i18n:name="microdata_end" itemprop="endDate" tal:attributes="content python:context.end().ISO8601()" />
+                                <meta i18n:name="microdata_end" itemprop="endDate" tal:attributes="content microdata/endDate" />
                                 <abbr i18n:name="enddate"
                                       metal:define-macro="enddate-field-view"
                                       tal:define="kss_class python:getKssClasses('endDate',
@@ -82,7 +85,7 @@
                                     Start Date Time</span>
                                 <br i18n:name="linebreak" />
                                 from
-                                <meta i18n:name="microdata_start" itemprop="startDate" tal:attributes="content python:context.start().ISO8601()" />
+                                <meta i18n:name="microdata_start" itemprop="startDate" tal:attributes="content microdata/startDate" />
                                 <abbr metal:define-macro="startdatesame-field-view"
                                       tal:define="kss_class python:getKssClasses('startDate',
                                                   templateId=templateId, macro='startdatesame-field-view');"
@@ -94,7 +97,7 @@
                                             class="explain"
                                             tal:content="python:toLocalizedTime(context.start(), time_only=1)">Start Time</span>
                                 </abbr> to
-                                <meta i18n:name="microdata_end" itemprop="endDate" tal:attributes="content python:context.end().ISO8601()" />
+                                <meta i18n:name="microdata_end" itemprop="endDate" tal:attributes="content microdata/endDate" />
                                 <abbr metal:define-macro="enddatesame-field-view"
                                       tal:define="kss_class python:getKssClasses('endDate',
                                                   templateId=templateId, macro='enddatesame-field-view');"
@@ -107,7 +110,7 @@
                                             tal:content="python:toLocalizedTime(context.end(), time_only=1)">End Time</span>
                                 </abbr>
                             </tal:sameday>
-                            <meta itemprop="duration" tal:attributes="content python:'%s/%s' % (context.start().ISO8601(),context.end().ISO8601())" />
+                            <meta itemprop="duration" tal:attributes="content microdata/duration" />
                         </div>
                         </div>
                   

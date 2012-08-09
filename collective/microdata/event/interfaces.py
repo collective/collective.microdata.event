@@ -3,7 +3,7 @@
 from zope.interface import Interface
 from zope import schema
 
-from collective.media.core.interfaces import ISchemaOrgThing
+from collective.microdata.core.interfaces import ISchemaOrgThing
 
 class IMicrodataEventLayer(Interface):
     """Marker interface for the collective.microdata.event layer"""

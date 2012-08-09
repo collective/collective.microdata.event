@@ -4,8 +4,10 @@ Changelog
 0.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Now requires `collective.microdata.core`__ [keul]
+- Moved logic to a ``IMicrodataVocabulary`` adapter [keul] 
 
+__ https://github.com/keul/collective.microdata.core
 
 0.1 (2012-07-22)
 ----------------
