@@ -16,3 +16,15 @@ class EventMicrodataProvider(ThingMicrodataProvider):
         self.endDate = content.end().ISO8601()
         self.duration = '%s/%s' % (self.startDate, self.endDate) 
         self.location = content.location
+
+
+class EventMicrodataBrainProvider(object):
+    implements(ISchemaOrgEvent)
+    
+    def __init__(self, brain):
+        self.brain = brain
+        self.microdata_vocabulary = 'http://schema.org/Event'
+        self.startDate = brain.start.ISO8601()
+        self.endDate = brain.end.ISO8601()
+        self.duration = '%s/%s' % (self.startDate, self.endDate) 
+        self.location = brain.location
