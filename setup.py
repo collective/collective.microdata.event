@@ -11,11 +11,10 @@ setup(name='collective.microdata.event',
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
         "Framework :: Plone",
         "Framework :: Plone :: 4.2",
         "Programming Language :: Python",
-        "Environment :: Web Environment",
         ],
       keywords='plone microdata schema.org html5 event',
       author='keul',
