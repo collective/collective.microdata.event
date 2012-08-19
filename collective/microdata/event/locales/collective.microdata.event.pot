@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-07-15 18:14+0000\n"
+"POT-Creation-Date: 2012-08-19 14:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,32 @@ msgstr ""
 "Domain: collective.microdata.event\n"
 
 #. Default: "${microdata_start} ${startdate} to ${linebreak} ${microdata_end} ${enddate}"
-#: ../browser/event_view.pt:60
+#: ../browser/templates/event_view.pt:63
 msgid "event_when_differentday"
 msgstr ""
 
 #. Default: "${date} ${linebreak} from ${microdata_start} ${starttime} to ${microdata_end} ${endtime}"
-#: ../browser/event_view.pt:98
+#: ../browser/templates/event_view.pt:101
 msgid "event_when_sameday"
+msgstr ""
+
+#. Default: "from ${microdata_start} ${start} to ${microdata_end} ${end}"
+#: ../browser/templates/folder_listing_item.pt:84
+msgid "label_event_byline"
+msgstr ""
+
+#. Default: "${start} from ${microdata_start} ${starttime} to ${microdata_end} ${end}"
+#: ../browser/templates/folder_listing_item.pt:69
+msgid "label_event_byline_samedate"
+msgstr ""
+
+#. Default: "(${location}, from ${microdata_start} ${start} to ${microdata_end} ${end})"
+#: ../browser/templates/folder_summary_view_item.pt:55
+msgid "label_event_byline_with_location"
+msgstr ""
+
+#. Default: "(from ${microdata_start} ${start} to ${microdata_end} ${end})"
+#: ../browser/templates/folder_summary_view_item.pt:70
+msgid "label_event_byline_without_location"
 msgstr ""
 

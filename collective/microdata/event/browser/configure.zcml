@@ -11,7 +11,7 @@
       name="event_view"
       layer="..interfaces.IMicrodataEventLayer"
       class=".view.EventView"
-      template="event_view.pt"
+      template="templates/event_view.pt"
       permission="zope2.View"
       />
   <browser:menuItem
@@ -20,6 +20,23 @@
       title="View Event"
       action="@@event_view"
       description=""
+      />
+
+  <browser:page
+      for="*"
+      name="http://schema.org/Event folder_listing_item"
+      layer="..interfaces.IMicrodataEventLayer"
+      class="collective.microdata.core.browser.view.BaseItemListingView"
+      template="templates/folder_listing_item.pt"
+      permission="zope2.View"
+      />
+  <browser:page
+      for="*"
+      name="http://schema.org/Event folder_summary_view_item"
+      layer="..interfaces.IMicrodataEventLayer"
+      class="collective.microdata.core.browser.view.BaseItemListingView"
+      template="templates/folder_summary_view_item.pt"
+      permission="zope2.View"
       />
 
 </configure>
