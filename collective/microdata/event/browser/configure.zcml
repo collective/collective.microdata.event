@@ -23,6 +23,7 @@
       />
 
   <browser:page
+      zcml:condition="installed collective.microdata.contentlisting"
       for="*"
       name="http://schema.org/Event folder_listing_item"
       layer="..interfaces.IMicrodataEventLayer"
@@ -31,6 +32,7 @@
       permission="zope2.View"
       />
   <browser:page
+      zcml:condition="installed collective.microdata.contentlisting"
       for="*"
       name="http://schema.org/Event folder_summary_view_item"
       layer="..interfaces.IMicrodataEventLayer"
