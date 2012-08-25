@@ -1,13 +1,18 @@
 Introduction
 ============
 
-Install this package and get an alternative version of event view in your Plone site. Changes are minimal, just to
-add basic HTML 5 `microdata`__ information, taken from `schema.org`__ specification.
+Install this package and get an alternative version of event view in your Plone site. Changes are minimal,
+just to add basic HTML 5 `microdata`__ information, taken from `schema.org`__ specification.
 
 __ http://en.wikipedia.org/wiki/Microdata_%28HTML%29
 __ http://www.schema.org/Event
 
 Microdata available in Web pages can be used from search engines, enhancing the quality of information indexed.
+
+This package is a proper implementation of the `collective.microdata.core`__ product. Read it's documentation
+for more information.
+
+__ http://pypi.python.org/pypi/collective.microdata.core
 
 Details
 =======
@@ -29,11 +34,21 @@ Follow a list supported properties:
 ``endDate``
     Taken from the end date
 ``duration``
-    Rendered in one of the ISO8601 formats, providing both start and end dates
+    Taken from the difference from end and start date
 
 __ http://www.schema.org/Person
 
-Notes
------
+Support for folder content listing views
+----------------------------------------
 
-Providing microdata doesn't ensure that search engines will use them.
+This package support also `collective.microdata.contentlisting`__ but not depends on it
+(you have to manually install that add-on yourself).
+
+__ http://pypi.python.org/pypi/collective.microdata.contentlisting
+
+Then you will be able to provide microdata information about events also when listing folders content.
+
+Final notes
+===========
+
+Providing microdata doesn't ensure that search engines will use it.
