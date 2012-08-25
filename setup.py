@@ -28,6 +28,7 @@ setup(name='collective.microdata.event',
       install_requires=[
           'setuptools',
           'collective.microdata.core',
+          'isodate',
       ],
       entry_points="""
       [z3c.autoinclude.plugin]

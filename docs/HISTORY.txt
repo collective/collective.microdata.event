@@ -6,8 +6,15 @@ Changelog
 
 - Now requires `collective.microdata.core`__ [keul]
 - Moved logic to a ``IMicrodataVocabulary`` adapter [keul] 
+- Added a dependency to `isodate`__ library, to be able to
+  generate ISO 8601 duration format [keul]
+- Added support for `collective.microdata.contentlisting`__
+- Plone catalog will now index the "Event URL" data inside the
+  ``getRemoteUrl`` metadata column [keul]
 
 __ https://github.com/keul/collective.microdata.core
+__ http://pypi.python.org/pypi/isodate/
+__ https://github.com/keul/collective.microdata.contentlisting
 
 0.1 (2012-07-22)
 ----------------

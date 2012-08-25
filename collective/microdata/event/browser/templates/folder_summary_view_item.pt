@@ -30,13 +30,14 @@
 
                         <a href="#"
                            class="summary url"
-                           itemprop="url"
                            tal:attributes="href python: item_type in use_view_action and item_url+'/view' or item_url;">
                                <span itemprop="name"
                                      tal:content="item_title_or_id">Item Title</span>
                         </a>
 
                     </h2>
+                    <meta itemprop="url" tal:attributes="content microdata/url" />
+
 
                     <div class="documentByLine" tal:condition="python: site_properties.allowAnonymousViewAbout or not isAnon">
                         <span tal:condition="item/location"

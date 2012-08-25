@@ -36,13 +36,13 @@
                         <span class="summary">
                             <img tal:replace="structure item_icon/html_tag" />
                             <a href="#"
-                               itemprop="url"
                                tal:attributes="href python:item_type in use_view_action and item_url+'/view' or item_url;
                                                class string:$item_type_class $item_wf_state_class url">
                                <span itemprop="name"
                                      tal:content="item_title_or_id">Item Title</span>
                             </a>
                         </span>
+                        <meta itemprop="url" tal:attributes="content microdata/url" />
     
                         <span class="documentByLine">
                             <span tal:condition="item_sametime"
