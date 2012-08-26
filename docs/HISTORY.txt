@@ -11,6 +11,8 @@ Changelog
 - Added support for `collective.microdata.contentlisting`__
 - Plone catalog will now index the "Event URL" data inside the
   ``getRemoteUrl`` metadata column [keul]
+- Adaptation must be based on ``IMicrodataVocabulary``, for support
+  also non-schema.org vocabularies [keul]
 
 __ https://github.com/keul/collective.microdata.core
 __ http://pypi.python.org/pypi/isodate/

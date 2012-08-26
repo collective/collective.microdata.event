@@ -48,6 +48,8 @@ __ http://pypi.python.org/pypi/collective.microdata.contentlisting
 
 Then you will be able to provide microdata information about events also when listing folders content.
 
+See it's documentation for knowing what views are supported.
+
 Final notes
 ===========
 
