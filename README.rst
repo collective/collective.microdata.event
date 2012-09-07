@@ -41,7 +41,7 @@ __ http://www.schema.org/Person
 Support for folder content listing views
 ----------------------------------------
 
-This package support also `collective.microdata.contentlisting`__ but not depends on it
+This package supports also `collective.microdata.contentlisting`__ but not depends on it
 (you have to manually install that add-on yourself).
 
 __ http://pypi.python.org/pypi/collective.microdata.contentlisting
