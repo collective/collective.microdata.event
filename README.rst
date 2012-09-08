@@ -12,7 +12,7 @@ Microdata available in Web pages can be used from search engines, enhancing the 
 This package is a proper implementation of the `collective.microdata.core`__ product. Read it's documentation
 for more information.
 
-__ http://pypi.python.org/pypi/collective.microdata.core
+__ https://github.com/keul/collective.microdata.core
 
 Details
 =======
@@ -44,7 +44,7 @@ Support for folder content listing views
 This package supports also `collective.microdata.contentlisting`__ but not depends on it
 (you have to manually install that add-on yourself).
 
-__ http://pypi.python.org/pypi/collective.microdata.contentlisting
+__ https://github.com/keul/collective.microdata.contentlisting
 
 Then you will be able to provide microdata information about events also when listing folders content.
 
