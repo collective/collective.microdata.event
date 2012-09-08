@@ -7,6 +7,9 @@ just to add basic HTML 5 `microdata`__ information, taken from `schema.org`__ sp
 __ http://en.wikipedia.org/wiki/Microdata_%28HTML%29
 __ http://www.schema.org/Event
 
+.. image:: http://keul.it/images/plone/collective.microdata/collective.microdata.event-0.2-01.png
+   :alt: Event view with microdata tool enabled
+
 Microdata available in Web pages can be used from search engines, enhancing the quality of information indexed.
 
 This package is a proper implementation of the `collective.microdata.core`__ product. Read it's documentation
@@ -47,6 +50,9 @@ This package supports also `collective.microdata.contentlisting`__ but not depen
 __ https://github.com/keul/collective.microdata.contentlisting
 
 Then you will be able to provide microdata information about events also when listing folders content.
+
+.. image:: http://keul.it/images/plone/collective.microdata/collective.microdata.event-0.2-02.png
+   :alt: Events and other contents in folder listing view
 
 See it's documentation for knowing what views are supported.
 
